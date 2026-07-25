@@ -40,7 +40,7 @@ const MATERIAS = [
   { code:"2270", name:"Logística II — Demanda y Gestión de Compras", year:2, semester:1, troncal:true, credits:7, hours:50, cursar:"-", aprobar:"171-175", url: PLACEHOLDER },
   { code:"2271", name:"Estadística Aplicada a la Logística", year:2, semester:1, troncal:false, credits:6, hours:60, cursar:"172", aprobar:"172", url: PLACEHOLDER },
   { code:"2272", name:"Física Aplicada a la Logística", year:2, semester:1, troncal:false, credits:5, hours:60, cursar:"176", aprobar:"176", url: PLACEHOLDER },
-  { code:"2273", name:"Envases y Embalajes", year:2, semester:1, troncal:false, credits:5, hours:60, cursar:"177", aprobar:"175-177", url:"/2_año/1_cuatrimestre/Envases y Embalajes/envases.html" },
+  { code:"2273", name:"Envases y Embalajes", year:2, semester:1, troncal:false, credits:5, hours:60, cursar:"177", aprobar:"175-177", url:"/2_año/1_cuatrimestre/Envases_y_Embalajes/envases.html" },
   { code:"2274", name:"Portugués II", year:2, semester:1, troncal:false, credits:3, hours:50, cursar:"179", aprobar:"179", url: PLACEHOLDER },
 
   // ---------------- AÑO 2 · CUATRIMESTRE 2 ----------------
