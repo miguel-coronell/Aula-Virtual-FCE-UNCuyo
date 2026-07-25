@@ -10,7 +10,7 @@
    como ejemplo, apuntando a envases.html.
    ========================================================= */
 
-const PLACEHOLDER = "PEGAR-ENLACE-DEL-AULA-VIRTUAL-AQUI";
+const PLACEHOLDER = "/1_año/2_cuatrimestre/Fundamentos de Economía/economia.html";
 
 const ICON = {
   credit: `<svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M9 12h6M12 9v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>`,
@@ -24,7 +24,7 @@ const ICON = {
 const MATERIAS = [
   // ---------------- AÑO 1 · CUATRIMESTRE 1 ----------------
   { code:"2170", name:"Introducción a la Logística", year:1, semester:1, troncal:true,  credits:6,  hours:60, cursar:"-", aprobar:"-", url: PLACEHOLDER },
-  { code:"2171", name:"Administración", year:1, semester:1, troncal:false, credits:5, hours:60, cursar:"-", aprobar:"-", url: PLACEHOLDER },
+  { code:"2171", name:"Administración", year:1, semester:1, troncal:false, credits:5, hours:60, cursar:"-", aprobar:"-", url: "/1_año/1_cuatrimestre/Administración/administracion.html" },
   { code:"2172", name:"Cálculo en Entornos Logísticos", year:1, semester:1, troncal:false, credits:5, hours:45, cursar:"-", aprobar:"-", url: PLACEHOLDER },
   { code:"2173", name:"Comunicación Estratégica y Digital", year:1, semester:1, troncal:false, credits:5, hours:60, cursar:"-", aprobar:"-", url: PLACEHOLDER },
   { code:"2174", name:"Fundamentos Contables en Entorno Digital", year:1, semester:1, troncal:false, credits:4, hours:45, cursar:"-", aprobar:"-", url: PLACEHOLDER },

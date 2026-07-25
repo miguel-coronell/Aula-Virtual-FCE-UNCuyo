@@ -207,15 +207,29 @@ onAuthStateChanged(auth, (user) => {
   setGoogleLoading(false);
   setEmailLoading(false);
 
+  const loadingEl = document.getElementById("authLoading");
+
   if (user) {
-    // Ya hay sesión iniciada: vamos directo al aula virtual,
-    // sin mostrar ninguna pantalla intermedia.
+    // Ya hay sesión iniciada: redirigimos de inmediato al aula virtual.
+    // Al no quitar el spinner, el usuario ve la animación de carga conectando 
+    // directo con la redirección, ¡cero pantallazos del formulario!
     window.location.href = REDIRECT_AFTER_LOGIN;
     return;
   }
 
-  viewSignedOut.hidden = false;
-  viewSignedIn.hidden = true;
+  // Si NO hay sesión, iniciamos el desvanecimiento de la animación de carga
+  if (loadingEl) {
+    loadingEl.classList.add("fade-out");
+  }
+
+  // Esperamos 300ms a que termine el efecto CSS para mostrar el formulario suavemente
+  setTimeout(() => {
+    if (loadingEl) {
+      loadingEl.remove();
+    }
+    viewSignedOut.hidden = false;
+    viewSignedIn.hidden = true;
+  }, 300);
 });
 
 /* ---------------------- HELPERS ---------------------- */

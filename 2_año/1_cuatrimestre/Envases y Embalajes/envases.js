@@ -46,10 +46,9 @@ const CLASES = [
     ],
     survey: "https://forms.gle/NgrRQSR9HJdargx2A",
     files: [
-      { label: "Unidad_1-2_Resumen.pdf", type: "pdf", url: PLACEHOLDER },
-    ],
-  },
-  {
+{ label: "Unidad_1-2_Resumen.pdf", type: "pdf", url: "https://drive.google.com/file/d/1XMJcf5oNPYCGjwnJBwbUMU7Oi2SrZvzR/view?usp=sharing"}    ], },
+  
+{
     unit: "Unidad 1 y 2",
     tagKey: "u1-2",
     title: "Envase y Embalaje — Guía de Trabajo Final",
@@ -67,7 +66,7 @@ const CLASES = [
       { label: "Formulario: conformación de grupos", url: "https://forms.gle/wTzfvGR4mwruRhC18" },
     ],
     files: [
-      { label: "Guía de Trabajo Final.pdf", type: "pdf", url: PLACEHOLDER },
+      { label: "Guía de Trabajo Final.pdf", type: "pdf", url: "https://drive.google.com/file/d/1WVyGCwk1DJ2UjA2I9TrugsohLrfkuEkh/view?usp=sharing" },
     ],
   },
   {
@@ -87,7 +86,7 @@ const CLASES = [
     ],
     survey: "https://forms.gle/EwKxDKDSou6dy2Ux5",
     files: [
-      { label: "1. Materiales - Envase, Embalaje y Manejo de Materiales.pdf", type: "pdf", url: PLACEHOLDER },
+      { label: "1. Materiales - Envase, Embalaje y Manejo de Materiales.pdf", type: "pdf", url: "https://drive.google.com/file/d/1OG3-AhQXJgFuV5MpJ3z-hvOFF4kU7_VO/view?usp=sharing" },
     ],
   },
   {
@@ -105,7 +104,7 @@ const CLASES = [
     ],
     survey: "https://forms.gle/2Ti1BnWrbXkDFhLg9",
     files: [
-      { label: "1. Etiquetado Frontal - Envase, Embalaje y Manejo de Materiales.pptx", type: "ppt", url: PLACEHOLDER },
+      { label: "1. Etiquetado Frontal - Envase, Embalaje y Manejo de Materiales.pptx", type: "ppt", url: "https://docs.google.com/presentation/d/1L6ZMPPjpv8RUhhUmy24S_fEXqk5yLuDE/edit?usp=sharing&ouid=109469128098457310967&rtpof=true&sd=true" },
     ],
   },
   {
@@ -125,7 +124,7 @@ const CLASES = [
       { label: "Inscripción visita COFARMEN — 26/05/26, 14 a 16 h (Rodríguez Peña 4176, Maipú)", url: "https://forms.gle/TS5vr53FfBDLgggJA" },
     ],
     files: [
-      { label: "2. Envases y Embalajes y Marketing Nacional e Internacional.pptx", type: "ppt", url: PLACEHOLDER },
+      { label: "2. Envases y Embalajes y Marketing Nacional e Internacional.pptx", type: "ppt", url: "https://docs.google.com/presentation/d/1QdtuW0oo7ZD5WOv2qAExNXlzDnqybIe2/edit?usp=sharing&ouid=109469128098457310967&rtpof=true&sd=true" },
     ],
   },
   {
@@ -169,15 +168,38 @@ const EVALS = [
 ];
 
 /* ---------------------- DATOS: BIBLIOGRAFÍA ---------------------- */
+
 const ARTICULOS = [
-  "Dialnet — Los envases y embalajes como fuente de ventajas competitivas.pdf",
-  "El Envase — García.pdf",
-  "Empaques y embalajes.pdf",
-  "Envases V. C. — García.pdf",
-  "Estudio de recomendaciones logísticas.pdf",
-  "Fundamentos de envases y embalajes.pdf",
-  "Mejora — García.pdf",
-].map(name => ({ label: name, url: PLACEHOLDER }));
+  { 
+    label: "Dialnet — Los envases y embalajes como fuente de ventajas competitivas.pdf", 
+    url: "https://drive.google.com/file/d/1DU7eCP8-08cQTIRYXEs4mfA4qs7ilcPR/view?usp=sharing" 
+  },
+  { 
+    label: "El Envase — García.pdf", 
+    url: "https://drive.google.com/file/d/1X6pjEJPMCh0KbcQxzB6iQ0-2ZBXxkpfj/view?usp=sharing" 
+  },
+  { 
+    label: "Empaques y embalajes.pdf", 
+    url: "https://drive.google.com/file/d/1q_wSnJHK2SoPJm9RpXOCqWRrl1E7tHv3/view?usp=sharing" 
+  },
+  { 
+    label: "Envases V. C. — García.pdf", 
+    url: "https://drive.google.com/file/d/1EImDcWFbnCJdyT_9sRWBlA4_-6cn3MgA/view?usp=sharing" 
+  },
+  { 
+    label: "Estudio de recomendaciones logísticas.pdf", 
+    url: "https://drive.google.com/file/d/1NzpK3OCaxERsKVKXf9QTYBjNu-kRLmqG/view?usp=sharing" 
+  },
+  { 
+    label: "Fundamentos de envases y embalajes.pdf", 
+    url: "https://drive.google.com/file/d/1NgPReNhsOWrKTkpaU1JjJTvH8yBYmCFv/view?usp=sharing" 
+  },
+  { 
+    label: "Mejora — García.pdf", 
+    url: "https://drive.google.com/file/d/1AdDWlq0npNHV0pM3qABsogcbq3i9wNRY/view?usp=sharing" 
+  }
+];
+
 
 const MATERIAL_ESTUDIO = [
   { label: "Ballou, R. — Logística: administración de la cadena de suministro", url: "https://drive.google.com/file/d/1v_iQxvdDl6mFqkrkNsSlLfF4TQdjCwBn/view?usp=sharing" },
@@ -186,7 +208,7 @@ const MATERIAL_ESTUDIO = [
 ];
 
 const RESUMENES = [
-  { label: "Resúmenes Unidad I a VI (carpeta completa)", url: PLACEHOLDER },
+  { label: "Resúmenes Unidad I a VI (carpeta completa)", url: "https://drive.google.com/drive/folders/1rHCrj0nfsmbxUV1zsc-hRLixh_ZhsFHa?usp=sharing" },
 ];
 
 /* =========================================================

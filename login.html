@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="login.css">
-<link rel="icon" href="/img/favicon.png" type="image/png">
+<link rel="icon" href="img/favicon.png" type="image/png">
 
 </head>
 <body>
@@ -60,8 +60,11 @@
   <!-- ================= PANEL DERECHO: FORMULARIO ================= -->
   <main class="login-formside">
     <div class="login-card" id="loginCard">
-
-      <section class="login-view" id="viewSignedOut">
+<div id="authLoading" class="auth-loading-container">
+    <div class="custom-spinner"></div>
+    <span class="loading-text">Verificando sesión...</span>
+  </div>
+      <section class="login-view" id="viewSignedOut" hidden>
 
         <div class="login-tabs" id="loginTabs">
           <button type="button" class="login-tab is-active" data-mode="signin">Iniciar sesión</button>
