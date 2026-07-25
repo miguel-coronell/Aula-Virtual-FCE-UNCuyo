@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Envases y Embalajes · Plan 2025 · ECONET</title>
+<meta name="description" content="Aula virtual del curso Envases y Embalajes (Plan 2025) — FCE UNCuyo. Clases, grabaciones, guías y bibliografía en un solo lugar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="envases.css">
+<link rel="stylesheet" href="auth-widget.css">
+</head>
+<body>
+
+<!-- ============ BARRA DE PROGRESO DE SCROLL ============ -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="siteNav">
+  <div class="nav__inner container">
+    <a href="index.html" class="nav__brand">
+      <span class="nav__crate" aria-hidden="true">
+        <svg viewBox="0 0 48 48" fill="none"><path d="M6 14L24 6l18 8-18 8L6 14Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M6 14v20l18 8V22L6 14Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M42 14v20l-18 8V22l18-8Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="nav__title">ECONET <em>· Envases y Embalajes</em></span>
+    </a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="index.html"><svg viewBox="0 0 24 24" fill="none"><path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Todas las materias</a>
+      <a href="#bienvenida"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.2" stroke="currentColor" stroke-width="2"/><path d="M5 20c1-3.5 4-5.5 7-5.5s6 2 7 5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Cátedra</a>
+      <a href="#clases"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="17" rx="2" stroke="currentColor" stroke-width="2"/><path d="M3 9h18M8 3v3M16 3v3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Clases</a>
+      <a href="#evaluaciones"><svg viewBox="0 0 24 24" fill="none"><path d="M9 11l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="2"/></svg>Evaluaciones</a>
+      <a href="#bibliografia"><svg viewBox="0 0 24 24" fill="none"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5v-15Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M4 20.5A2.5 2.5 0 0 1 6.5 18H20" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>Bibliografía</a>
+      <a href="#contacto"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Contacto</a>
+    </nav>
+
+    <div class="nav__auth" id="navAuth"></div>
+
+    <a class="btn btn--ghost nav__whatsapp" href="https://wa.me/5492616796043" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5C10.1 9 9.6 7.8 9.4 7.3c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.4z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.5-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+      WhatsApp
+    </a>
+
+    <button class="nav__burger" id="navBurger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="inicio">
+    <div class="hero__crate-lines" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <div class="hero__stamp">Plan 2025 · Facultad de Ciencias Económicas — UNCuyo</div>
+      <h1 class="hero__title">ENVASES<br>&amp; EMBALAJES</h1>
+      <p class="hero__tagline">Identificá, relacioná y aplicá los conocimientos sobre envases, embalajes y manejo de materiales en la cadena de suministro y de valor.</p>
+
+      <div class="hero__actions">
+        <a href="#clases" class="btn btn--primary">
+          Ver todas las clases
+          <svg viewBox="0 0 24 24" fill="none" width="16" height="16"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="https://meet.google.com/ekn-bjjp-dgw" target="_blank" rel="noopener" class="btn btn--outline">
+          <svg viewBox="0 0 24 24" fill="none" width="16" height="16"><rect x="3" y="6" width="13" height="12" rx="2" stroke="currentColor" stroke-width="2"/><path d="M16 10.5 21 7v10l-5-3.5" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          Entrar a la clase (Meet)
+        </a>
+      </div>
+
+      <ul class="hero__ticket" id="statsRow">
+        <li><span class="hero__ticketnum" data-count="6">0</span><span>clases</span></li>
+        <li><span class="hero__ticketnum" data-count="11">0</span><span>grabaciones</span></li>
+        <li><span class="hero__ticketnum" data-count="12">0</span><span>documentos</span></li>
+        <li><span class="hero__ticketnum" data-count="2">0</span><span>evaluaciones</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ BIENVENIDA / CÁTEDRA ============ -->
+  <section class="section section--kraft" id="bienvenida">
+    <div class="container">
+      <p class="eyebrow">Bienvenida</p>
+      <h2 class="section__title">Equipo de cátedra</h2>
+      <p class="section__lead">En nuestra cátedra deseamos lograr que los estudiantes identifiquen, relacionen y apliquen los conocimientos sobre envases, embalajes, manejo de materiales y su consolidación en la cadena de suministro y de valor, para el desarrollo profesional y organizacional que al profesional en Logística le compete. <strong>¡Buen cuatrimestre!</strong></p>
+
+      <div class="team">
+        <article class="team__card">
+          <span class="team__role">Profesora Titular</span>
+          <h3>Mgter. Lic. Claudia Sosa</h3>
+          <p class="team__meta">Consulta: jueves 13:00 a 14:00 h</p>
+          <a class="link-copy" data-copy="meet.google.com/jpy-zyje-anz" href="https://meet.google.com/jpy-zyje-anz" target="_blank" rel="noopener">meet.google.com/jpy-zyje-anz</a>
+        </article>
+
+        <article class="team__card">
+          <span class="team__role">Profesor JTP</span>
+          <h3>Lic. Facundo López Cremaschi</h3>
+          <p class="team__meta">Consulta: miércoles 13:30 a 14:30 h</p>
+          <a class="link-copy" data-copy="meet.google.com/jay-agrq-mqt" href="https://meet.google.com/jay-agrq-mqt" target="_blank" rel="noopener">meet.google.com/jay-agrq-mqt</a>
+        </article>
+
+        <article class="team__card">
+          <span class="team__role">Profesora Adscripta</span>
+          <h3>Lic. María Victoria Marinelli</h3>
+          <p class="team__meta">Equipo de apoyo a la cátedra</p>
+        </article>
+      </div>
+
+      <div class="infobar">
+        <div class="infobar__item">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="17" rx="2" stroke="currentColor" stroke-width="2"/><path d="M3 9h18M8 3v3M16 3v3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <div><strong>Clases presenciales / EAD</strong><span>Martes, 16:00 h</span></div>
+        </div>
+        <a class="infobar__item infobar__item--link" href="https://meet.google.com/ekn-bjjp-dgw" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="13" height="12" rx="2" stroke="currentColor" stroke-width="2"/><path d="M16 10.5 21 7v10l-5-3.5" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          <div><strong>Enlace de clases</strong><span>meet.google.com/ekn-bjjp-dgw</span></div>
+        </a>
+        <a class="infobar__item infobar__item--link" href="https://chat.whatsapp.com/Loahe7gq2oE0gSfyPrm3Dn" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5C10.1 9 9.6 7.8 9.4 7.3c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.4z" fill="currentColor" stroke="none"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z" stroke="currentColor" stroke-width="2"/></svg>
+          <div><strong>Grupo de WhatsApp</strong><span>Unirme al grupo</span></div>
+        </a>
+        <a class="infobar__item infobar__item--link" href="mailto:envases.embalajes@fce.uncu.edu.ar">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><strong>Mail de la cátedra</strong><span>envases.embalajes@fce.uncu.edu.ar</span></div>
+        </a>
+      </div>
+
+      <div class="programa-cta">
+        <div>
+          <strong>Programa de la materia (Plan 2025)</strong>
+          <span>Generalidades, objetivos y unidades completas del programa.</span>
+        </div>
+        <a class="btn btn-pdf" href="PEGAR-ENLACE-DE-GOOGLE-DRIVE-AQUI" target="_blank" rel="noopener" data-filename="Programa Plan 2025.pdf">
+          <svg viewBox="0 0 24 24" fill="none" width="16" height="16"><path d="M12 3v13m0 0-4-4m4 4 4-4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+          Descargar programa
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CLASES ============ -->
+  <section class="section" id="clases">
+    <div class="container">
+      <p class="eyebrow">Contenido del curso</p>
+      <h2 class="section__title">Clases &amp; material</h2>
+      <p class="section__lead">Cada clase incluye el temario, el resumen, las grabaciones, la encuesta de asistencia y los documentos para descargar.</p>
+
+      <div class="toolbar">
+        <div class="search">
+          <svg viewBox="0 0 24 24" fill="none" width="18" height="18"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="m21 21-4.3-4.3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <input type="text" id="searchInput" placeholder="Buscar por tema, unidad o fecha…">
+        </div>
+        <div class="chips" id="chipsRow"></div>
+      </div>
+
+      <div class="grid" id="clasesGrid"></div>
+      <p class="empty-state" id="emptyState" hidden>No se encontraron clases con ese criterio. Probá con otro término.</p>
+    </div>
+  </section>
+
+  <!-- ============ EVALUACIONES ============ -->
+  <section class="section section--ink" id="evaluaciones">
+    <div class="container">
+      <p class="eyebrow eyebrow--light">Seguimiento</p>
+      <h2 class="section__title section__title--light">Evaluaciones</h2>
+      <p class="section__lead section__lead--light">Cuestionarios habilitados durante la cursada. Revisá fechas, intentos y tiempo disponible antes de rendir.</p>
+
+      <div class="grid grid--evals" id="evalsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ BIBLIOGRAFÍA ============ -->
+  <section class="section" id="bibliografia">
+    <div class="container">
+      <p class="eyebrow">Para profundizar</p>
+      <h2 class="section__title">Bibliografía general</h2>
+      <p class="section__lead">Artículos, libros y resúmenes de referencia para todo el cuatrimestre.</p>
+
+      <div class="biblio-block">
+        <h3 class="biblio-block__title">Artículos</h3>
+        <div class="biblio-list" id="articulosList"></div>
+      </div>
+
+      <div class="biblio-block">
+        <h3 class="biblio-block__title">Material de estudio</h3>
+        <div class="biblio-list" id="materialList"></div>
+      </div>
+
+      <div class="biblio-block">
+        <h3 class="biblio-block__title">Resúmenes Unidad I a VI</h3>
+        <div class="biblio-list" id="resumenesList"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOBRE LA CARRERA ============ -->
+  <section class="section section--kraft career-band">
+    <div class="container career-band__inner">
+      <div class="career-band__icon">
+        <svg viewBox="0 0 24 24" fill="none" width="26" height="26"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5v-15Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M4 20.5A2.5 2.5 0 0 1 6.5 18H20" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="career-band__text">
+        <strong>Envases y Embalajes es una materia de la Licenciatura en Logística</strong>
+        <p>Formá parte de una carrera con salida laboral en cadena de suministro, comercio internacional, transporte y distribución. 4 años, 40 materias y un título intermedio en el camino.</p>
+      </div>
+      <a class="btn btn--outline career-band__cta" href="index.html">
+        Ver el plan de estudios completo
+        <svg viewBox="0 0 24 24" fill="none" width="16" height="16"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER / CONTACTO ============ -->
+<footer class="footer" id="contacto">
+  <div class="container footer__grid">
+    <div class="footer__col">
+      <span class="footer__brand">ECONET</span>
+      <p>Curso: Envases y Embalajes (Plan 2025)<br>Facultad de Ciencias Económicas — UNCuyo</p>
+      <div class="footer__social">
+        <a href="https://fce.uncuyo.edu.ar/" target="_blank" rel="noopener" aria-label="Sitio web FCE"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" stroke="currentColor" stroke-width="2"/></svg></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="2"/><path d="M7 10v7M7 7v.01M11 17v-4.5a2.5 2.5 0 0 1 5 0V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a>
+        <a href="https://wa.me/5492616796043" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5C10.1 9 9.6 7.8 9.4 7.3c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.4z" fill="currentColor" stroke="none"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z" stroke="currentColor" stroke-width="2"/></svg></a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <span class="footer__heading">Contacto</span>
+      <a href="mailto:envases.embalajes@fce.uncu.edu.ar">envases.embalajes@fce.uncu.edu.ar</a>
+      <a href="mailto:econet@fce.uncu.edu.ar">econet@fce.uncu.edu.ar</a>
+      <a href="tel:+5492616796043">+54 9 261 679 6043</a>
+    </div>
+
+    <div class="footer__col">
+      <span class="footer__heading">Accesos rápidos</span>
+      <a href="#clases">Clases</a>
+      <a href="#evaluaciones">Evaluaciones</a>
+      <a href="#bibliografia">Bibliografía</a>
+      <a href="https://meet.google.com/ekn-bjjp-dgw" target="_blank" rel="noopener">Entrar a Meet</a>
+    </div>
+  </div>
+
+  <div class="footer__bottom container">
+    <span>© 2026 Cátedra Envases y Embalajes — FCE UNCuyo. Rediseño no oficial del aula virtual.</span>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Volver arriba">
+  <svg viewBox="0 0 24 24" fill="none" width="18" height="18"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<div class="toast" id="toast"></div>
+
+<script type="module" src="firebase-config.js"></script>
+<script type="module" src="auth-widget.js"></script>
+<script src="envases.js"></script>
+</body>
+</html>

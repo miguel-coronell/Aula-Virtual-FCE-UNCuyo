@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Licenciatura en Logística · Plan de Estudios 2025 · ECONET</title>
+<meta name="description" content="Plan de estudios de la Licenciatura en Logística (Ord. 98/2024-CS y Ord. 4/2024-CD). 40 materias organizadas por año y cuatrimestre, con acceso a cada aula virtual.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="auth-widget.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="siteNav">
+  <div class="nav__inner container">
+    <a href="index.html" class="nav__brand">
+      <span class="nav__crate" aria-hidden="true">
+        <svg viewBox="0 0 48 48" fill="none"><path d="M6 14L24 6l18 8-18 8L6 14Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M6 14v20l18 8V22L6 14Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M42 14v20l-18 8V22l18-8Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="nav__title">ECONET <em>· Licenciatura en Logística</em></span>
+    </a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#inicio"><svg viewBox="0 0 24 24" fill="none"><path d="m3 11 9-7 9 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 10v9a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1v-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Inicio</a>
+      <a href="#materias"><svg viewBox="0 0 24 24" fill="none"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5v-15Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M4 20.5A2.5 2.5 0 0 1 6.5 18H20" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>Materias</a>
+      <a href="#regimen"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v4M8 21h8M12 15v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M5 7h14l-2 6a5 5 0 0 1-10 0L5 7Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>Régimen de promoción</a>
+      <a href="#contacto"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Contacto</a>
+    </nav>
+
+    <div class="nav__auth" id="navAuth"></div>
+
+    <a class="btn btn--ghost nav__whatsapp" href="https://wa.me/5492616796043" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5C10.1 9 9.6 7.8 9.4 7.3c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.4z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.5-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+      WhatsApp
+    </a>
+
+    <button class="nav__burger" id="navBurger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="inicio">
+    <div class="hero__crate-lines" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <div class="hero__stamp">Ord. 98/2024-CS · Ord. 4/2024-CD · Plan 2025</div>
+      <h1 class="hero__title">LICENCIATURA<br>EN LOGÍSTICA</h1>
+      <p class="hero__tagline">Plan de estudios completo: 40 materias distribuidas en 4 años y 8 cuatrimestres. Buscá por código o nombre y entrá directo al aula virtual de cada materia.</p>
+
+      <div class="hero__actions">
+        <a href="#materias" class="btn btn--primary">
+          Ver el plan de estudios
+          <svg viewBox="0 0 24 24" fill="none" width="16" height="16"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="envases.html" class="btn btn--outline">
+          <svg viewBox="0 0 24 24" fill="none" width="16" height="16"><path d="M6 14L24 6l18 8" stroke="currentColor" stroke-width="0"/><path d="M4 9h16M4 14h16M4 19h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          Ir a Envases y Embalajes
+        </a>
+      </div>
+
+      <ul class="hero__ticket" id="statsRow">
+        <li><span class="hero__ticketnum" data-count="40">0</span><span>materias</span></li>
+        <li><span class="hero__ticketnum" data-count="4">0</span><span>años</span></li>
+        <li><span class="hero__ticketnum" data-count="8">0</span><span>cuatrimestres</span></li>
+        <li><span class="hero__ticketnum" data-count="7">0</span><span>troncales</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ TITULO INTERMEDIO NOTICE (contexto general) ============ -->
+  <section class="section section--kraft notice-band">
+    <div class="container notice-band__inner">
+      <div class="notice-band__icon">
+        <svg viewBox="0 0 24 24" fill="none" width="24" height="24"><path d="M12 3 2 8l10 5 10-5-10-5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M6 10.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-5.5" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      </div>
+      <p><strong>Título intermedio:</strong> al completar 1°, 2° año y el primer cuatrimestre de 3° año (materias 2370 a 2374) se obtiene el título de <strong>Técnico/a Universitario/a en Administración de Almacenes</strong>.</p>
+    </div>
+  </section>
+
+  <!-- ============ MATERIAS ============ -->
+  <section class="section" id="materias">
+    <div class="container">
+      <p class="eyebrow">Plan de estudios 2025</p>
+      <h2 class="section__title">Todas las materias</h2>
+      <p class="section__lead">Organizadas por año de dictado. Usá el buscador o los filtros para encontrar una materia por código, nombre, año o cuatrimestre.</p>
+
+      <div class="toolbar">
+        <div class="search">
+          <svg viewBox="0 0 24 24" fill="none" width="18" height="18"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="m21 21-4.3-4.3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <input type="text" id="searchInput" placeholder="Buscar por código o nombre… (ej. 2273, Envases, Logística)">
+        </div>
+        <div class="chips" id="yearChips"></div>
+        <button class="chip chip--toggle" id="troncalToggle" data-active="false">Solo troncales</button>
+      </div>
+
+      <div id="yearSections"></div>
+      <p class="empty-state" id="emptyState" hidden>No se encontraron materias con ese criterio. Probá con otro código o nombre.</p>
+    </div>
+  </section>
+
+  <!-- ============ REGIMEN DE PROMOCIÓN ============ -->
+  <section class="section section--ink" id="regimen">
+    <div class="container">
+      <p class="eyebrow eyebrow--light">Correlatividades</p>
+      <h2 class="section__title section__title--light">Régimen de promoción</h2>
+      <p class="section__lead section__lead--light">Condiciones para avanzar de año dentro de la carrera.</p>
+
+      <div class="regimen-grid" id="regimenGrid"></div>
+
+      <p class="regimen-note">Las materias troncales están destacadas con la etiqueta <strong>TRONCAL</strong> en cada tarjeta. Para <strong>cursar</strong> una materia hay que tener regularizadas sus correlativas; para <strong>aprobar</strong> (incluye promocionar), tenerlas aprobadas. El espacio electivo debe ser pertinente a la Logística y acreditado por el Área Logística y la Dirección de Carrera.</p>
+    </div>
+  </section>
+
+  <!-- ============ SOBRE LA CARRERA ============ -->
+  <section class="section section--kraft career-band">
+    <div class="container career-band__inner">
+      <div class="career-band__icon">
+        <svg viewBox="0 0 24 24" fill="none" width="26" height="26"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M4 21c1.3-4.5 5-7 8-7s6.7 2.5 8 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </div>
+      <div class="career-band__text">
+        <strong>Licenciatura en Logística — Facultad de Ciencias Económicas, UNCuyo</strong>
+        <p>Formate en gestión de la cadena de suministro, transporte, comercio internacional y operaciones. Título intermedio de Técnico/a Universitario/a en Administración de Almacenes al tercer año, y salida laboral en una de las áreas con mayor demanda profesional.</p>
+      </div>
+      <a class="btn btn--outline career-band__cta" href="https://wa.me/5492616796043" target="_blank" rel="noopener">
+        Consultar por la carrera
+        <svg viewBox="0 0 24 24" fill="none" width="16" height="16"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="contacto">
+  <div class="container footer__grid">
+    <div class="footer__col">
+      <span class="footer__brand">ECONET</span>
+      <p>Licenciatura en Logística — Plan 2025<br>Facultad de Ciencias Económicas — UNCuyo</p>
+      <div class="footer__social">
+        <a href="https://fce.uncuyo.edu.ar/" target="_blank" rel="noopener" aria-label="Sitio web FCE"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" stroke="currentColor" stroke-width="2"/></svg></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="2"/><path d="M7 10v7M7 7v.01M11 17v-4.5a2.5 2.5 0 0 1 5 0V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a>
+        <a href="https://wa.me/5492616796043" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5C10.1 9 9.6 7.8 9.4 7.3c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.4z" fill="currentColor" stroke="none"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z" stroke="currentColor" stroke-width="2"/></svg></a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <span class="footer__heading">Contacto</span>
+      <a href="mailto:envases.embalajes@fce.uncu.edu.ar">envases.embalajes@fce.uncu.edu.ar</a>
+      <a href="mailto:econet@fce.uncu.edu.ar">econet@fce.uncu.edu.ar</a>
+      <a href="tel:+5492616796043">+54 9 261 679 6043</a>
+    </div>
+
+    <div class="footer__col">
+      <span class="footer__heading">Accesos rápidos</span>
+      <a href="#materias">Plan de estudios</a>
+      <a href="#regimen">Régimen de promoción</a>
+      <a href="envases.html">Envases y Embalajes</a>
+    </div>
+  </div>
+
+  <div class="footer__bottom container">
+    <span>© 2026 Licenciatura en Logística — FCE UNCuyo. Sitio no oficial de acceso a materias.</span>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Volver arriba">
+  <svg viewBox="0 0 24 24" fill="none" width="18" height="18"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<div class="toast" id="toast"></div>
+
+<script type="module" src="firebase-config.js"></script>
+<script type="module" src="auth-widget.js"></script>
+<script src="home.js"></script>
+</body>
+</html>

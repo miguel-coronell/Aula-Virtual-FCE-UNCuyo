@@ -1,0 +1,44 @@
+/* =========================================================
+   WIDGET DE SESIÓN — estilos para la nav
+   ========================================================= */
+
+.nav__login{
+  border-color: rgba(251,246,234,.5) !important;
+  color: var(--paper) !important;
+  flex-shrink:0;
+}
+
+.nav__user{
+  display:flex; align-items:center; gap:10px;
+  background: rgba(251,246,234,.08);
+  border: 1.5px solid rgba(251,246,234,.25);
+  border-radius: 999px;
+  padding: 6px 8px 6px 6px;
+  flex-shrink:0;
+}
+.nav__avatar{
+  width:30px; height:30px; border-radius:50%;
+  object-fit:cover;
+  border: 2px solid var(--tape-yellow);
+}
+.nav__username{
+  font-size:.85rem; font-weight:600;
+  color: var(--paper);
+  max-width: 110px;
+  overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+}
+.nav__logout{
+  width:26px; height:26px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  background: transparent; border: 1.5px solid rgba(251,246,234,.3);
+  color: var(--paper);
+  transition: all .2s ease;
+}
+.nav__logout:hover{
+  background: var(--stamp-red);
+  border-color: var(--stamp-red);
+}
+
+@media (max-width: 780px){
+  .nav__username{ display:none; }
+}

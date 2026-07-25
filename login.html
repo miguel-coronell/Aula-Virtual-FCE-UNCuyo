@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iniciar sesión · Licenciatura en Logística · ECONET</title>
+<meta name="description" content="Acceso al aula virtual de la Licenciatura en Logística. Iniciá sesión o registrate con tu cuenta de Google o con tu correo electrónico.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div class="login-page">
+
+  <!-- ================= PANEL IZQUIERDO: INFO DE LA CARRERA ================= -->
+  <aside class="login-info">
+    <div class="login-info__lines" aria-hidden="true"></div>
+
+    <a href="index.html" class="login-brand">
+      <span class="login-brand__crate" aria-hidden="true">
+        <svg viewBox="0 0 48 48" fill="none"><path d="M6 14L24 6l18 8-18 8L6 14Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M6 14v20l18 8V22L6 14Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M42 14v20l-18 8V22l18-8Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/></svg>
+      </span>
+      <span>ECONET <em>· Licenciatura en Logística</em></span>
+    </a>
+
+    <div class="login-info__body">
+      <span class="login-stamp">Plan 2025 · FCE UNCuyo</span>
+      <h1 class="login-info__title">Tu aula virtual,<br>toda la carrera<br>en un solo lugar</h1>
+      <p class="login-info__sub">Iniciá sesión para acceder a las 40 materias de la Licenciatura en Logística: clases, grabaciones, bibliografía y evaluaciones, organizadas por año y cuatrimestre.</p>
+
+      <ul class="login-info__stats">
+        <li><strong>40</strong><span>materias</span></li>
+        <li><strong>4</strong><span>años</span></li>
+        <li><strong>1</strong><span>título intermedio</span></li>
+      </ul>
+
+      <ul class="login-info__perks">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Clases, grabaciones y material siempre disponibles
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Seguimiento de evaluaciones y fechas clave
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Acceso directo a cada cátedra desde un mismo panel
+        </li>
+      </ul>
+    </div>
+
+    <p class="login-info__footer">© 2026 Licenciatura en Logística — FCE UNCuyo</p>
+  </aside>
+
+  <!-- ================= PANEL DERECHO: FORMULARIO ================= -->
+  <main class="login-formside">
+    <div class="login-card" id="loginCard">
+
+      <section class="login-view" id="viewSignedOut">
+
+        <div class="login-tabs" id="loginTabs">
+          <button type="button" class="login-tab is-active" data-mode="signin">Iniciar sesión</button>
+          <button type="button" class="login-tab" data-mode="signup">Crear cuenta</button>
+        </div>
+
+        <h2 class="login-title" id="formTitle">Bienvenido/a de nuevo</h2>
+        <p class="login-sub" id="formSub">Accedé con tu cuenta de Google o con tu correo y contraseña.</p>
+
+        <button class="google-btn" id="googleSignInBtn" type="button">
+          <span class="google-btn__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" width="20" height="20">
+              <path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.6 29.3 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.1 8 3l6-6C34.5 5.4 29.5 3 24 3 12.4 3 3 12.4 3 24s9.4 21 21 21 21-9.4 21-21c0-1.2-.1-2.4-.4-3.5z"/>
+              <path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.7 15.9 18.9 13 24 13c3.1 0 5.8 1.1 8 3l6-6C34.5 6.4 29.5 4 24 4 16.2 4 9.5 8.5 6.3 14.7z"/>
+              <path fill="#4CAF50" d="M24 45c5.4 0 10.3-2.1 14-5.5l-6.5-5.4C29.5 35.9 26.9 37 24 37c-5.3 0-9.7-3.4-11.3-8.1l-6.6 5.1C9.4 40.5 16.1 45 24 45z"/>
+              <path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.3-2.3 4.3-4.2 5.7l6.5 5.4C39.9 37.3 43 31.6 43 24c0-1.2-.1-2.4-.4-3.5z"/>
+            </svg>
+          </span>
+          <span id="googleBtnLabel">Continuar con Google</span>
+          <span class="google-btn__spinner" id="googleBtnSpinner" hidden></span>
+        </button>
+
+        <div class="login-divider"><span>o con tu correo</span></div>
+
+        <form class="login-form" id="emailForm" novalidate>
+          <label class="login-field">
+            <span>Correo electrónico</span>
+            <input type="email" id="emailInput" name="email" placeholder="nombre@ejemplo.com" autocomplete="email" required>
+          </label>
+
+          <label class="login-field">
+            <span>Contraseña</span>
+            <input type="password" id="passwordInput" name="password" placeholder="••••••••" autocomplete="current-password" required minlength="6">
+          </label>
+
+          <label class="login-field" id="confirmField" hidden>
+            <span>Confirmar contraseña</span>
+            <input type="password" id="confirmInput" name="confirm" placeholder="••••••••" autocomplete="new-password" minlength="6">
+          </label>
+
+          <button type="button" class="link-btn login-forgot" id="forgotBtn">¿Olvidaste tu contraseña?</button>
+
+          <button type="submit" class="btn btn--primary login-submit" id="emailSubmitBtn">
+            <span id="emailSubmitLabel">Iniciar sesión</span>
+            <span class="google-btn__spinner google-btn__spinner--dark" id="emailSubmitSpinner" hidden></span>
+          </button>
+        </form>
+
+        <p class="login-error" id="loginError" hidden></p>
+        <p class="login-success" id="loginSuccess" hidden></p>
+
+        <p class="login-fineprint">Al continuar aceptás que tu nombre, foto y correo se usen para identificarte dentro del aula virtual.</p>
+      </section>
+
+    </div>
+  </main>
+
+</div>
+
+<!-- =========================================================
+     FIREBASE (SDK modular vía CDN)
+     Documentación: https://firebase.google.com/docs/auth/web/google-signin
+     y https://firebase.google.com/docs/auth/web/password-auth
+     ========================================================= -->
+<script type="module" src="firebase-config.js"></script>
+<script type="module" src="login.js"></script>
+</body>
+</html>
