@@ -88,7 +88,7 @@ button{ font-family: inherit; cursor:pointer; }
   display:flex; align-items:center; gap:10px;
   color: var(--paper);
   margin-right: auto;
-  flex-shrink:0;
+  min-width:0;
 }
 .nav__crate{ color: var(--tape-yellow); width:30px; height:30px; display:flex; }
 .nav__crate svg{ width:100%; height:100%; }
@@ -97,8 +97,11 @@ button{ font-family: inherit; cursor:pointer; }
   font-size: 1.05rem;
   letter-spacing:.02em;
   white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  min-width:0;
 }
-.nav__title em{ font-style:normal; color: var(--kraft); font-family: var(--font-body); font-size:.72rem; letter-spacing:.06em; text-transform:uppercase; display:block; margin-top:-2px;}
+.nav__title em{ font-style:normal; color: var(--kraft); font-family: var(--font-body); font-size:.72rem; letter-spacing:.06em; text-transform:uppercase; display:block; margin-top:-2px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
 
 .nav__links{
   display:flex; gap: 28px;
@@ -135,6 +138,7 @@ button{ font-family: inherit; cursor:pointer; }
   flex-direction:column; justify-content:center; gap:5px;
   width:38px; height:38px;
   background:none; border:none; padding:0;
+  flex-shrink:0;
 }
 .nav__burger span{
   display:block; height:2px; width:100%;
@@ -511,13 +515,12 @@ button{ font-family: inherit; cursor:pointer; }
 /* =========================================================
    EVALUATIONS
    ========================================================= */
-.grid--evals{ grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); }
-.grid--evals{ grid-template-columns: repeat(auto-fit, minmax(240px, 320px)); gap: 16px; }
+.grid--evals{ grid-template-columns: repeat(auto-fit, minmax(220px, 280px)); gap: 14px; }
 .eval-card{
   background: #2C241B;
   border: 1.5px solid rgba(251,246,234,.14);
   border-radius: var(--radius-s);
-  padding: 18px 18px;
+  padding: 14px 16px;
   color: var(--paper);
   transition: transform .25s ease, border-color .25s ease, background .25s ease;
 }
@@ -527,21 +530,34 @@ button{ font-family: inherit; cursor:pointer; }
   background: #362C20;
 }
 .eval-card__icon{
-  width:34px; height:34px;
+  width:28px; height:28px;
   border-radius:50%;
   background: var(--stamp-red);
   display:flex; align-items:center; justify-content:center;
-  margin-bottom:12px;
+  margin-bottom:9px;
 }
-.eval-card__icon svg{ width:16px; height:16px; color:#fff; }
-.eval-card h3{ font-family: var(--font-body); font-weight:700; font-size:.98rem; margin-bottom:5px; }
-.eval-card__dates{ font-family: var(--font-mono); font-size:.7rem; color: var(--tape-yellow); margin-bottom:12px; line-height:1.5; }
-.eval-card__tags{ display:flex; flex-wrap:wrap; gap:6px; }
+.eval-card__icon svg{ width:14px; height:14px; color:#fff; }
+.eval-card h3{ font-family: var(--font-body); font-weight:700; font-size:.92rem; margin-bottom:4px; line-height:1.3; }
+.eval-card__dates{ font-family: var(--font-mono); font-size:.66rem; color: var(--tape-yellow); margin-bottom:10px; line-height:1.45; }
+.eval-card__tags{ display:flex; flex-wrap:wrap; gap:5px; }
 .eval-card__tags span{
-  font-size:.66rem; font-weight:600; letter-spacing:.02em;
+  font-size:.62rem; font-weight:600; letter-spacing:.02em;
   background: rgba(251,246,234,.09);
   border: 1px solid rgba(251,246,234,.18);
-  border-radius:999px; padding:4px 9px;
+  border-radius:999px; padding:3px 8px;
+}
+
+@media (max-width: 560px){
+  .grid--evals{ grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .eval-card{ padding: 12px; }
+  .eval-card__icon{ width:24px; height:24px; margin-bottom:7px; }
+  .eval-card__icon svg{ width:12px; height:12px; }
+  .eval-card h3{ font-size:.82rem; }
+  .eval-card__dates{ font-size:.6rem; }
+}
+
+@media (max-width: 400px){
+  .grid--evals{ grid-template-columns: 1fr; }
 }
 
 /* =========================================================
@@ -715,6 +731,7 @@ button{ font-family: inherit; cursor:pointer; }
   }
   .nav__links a svg{ width:18px; height:18px; }
   .nav__whatsapp{ display:none; }
+  .nav__title em{ display:none; }
   .nav__auth{ order:2; }
   .nav__burger{ display:flex; order:3; }
   .hero{ padding: 60px 0 40px; }

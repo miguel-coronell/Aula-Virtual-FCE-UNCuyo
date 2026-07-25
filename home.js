@@ -32,7 +32,7 @@ const MATERIAS = [
   // ---------------- AÑO 1 · CUATRIMESTRE 2 ----------------
   { code:"2175", name:"Logística I — Cadena de Suministro", year:1, semester:2, troncal:true, credits:6, hours:50, cursar:"170", aprobar:"170", url: PLACEHOLDER },
   { code:"2176", name:"Álgebra en Entornos Logísticos", year:1, semester:2, troncal:false, credits:5, hours:45, cursar:"172", aprobar:"172", url: PLACEHOLDER },
-  { code:"2177", name:"Fundamentos de Economía", year:1, semester:2, troncal:false, credits:7, hours:70, cursar:"173", aprobar:"173", url: PLACEHOLDER },
+  { code:"2177", name:"Fundamentos de Economía", year:1, semester:2, troncal:false, credits:7, hours:70, cursar:"173", aprobar:"173", url:"/1_año/2_cuatrimestre/Fundamentos de Economía/economia.html" },
   { code:"2178", name:"Fundamentos del Derecho Público y Privado", year:1, semester:2, troncal:false, credits:4, hours:45, cursar:"173", aprobar:"173", url: PLACEHOLDER },
   { code:"2179", name:"Portugués I", year:1, semester:2, troncal:false, credits:3, hours:45, cursar:"-", aprobar:"-", url: PLACEHOLDER },
 
@@ -40,7 +40,7 @@ const MATERIAS = [
   { code:"2270", name:"Logística II — Demanda y Gestión de Compras", year:2, semester:1, troncal:true, credits:7, hours:50, cursar:"-", aprobar:"171-175", url: PLACEHOLDER },
   { code:"2271", name:"Estadística Aplicada a la Logística", year:2, semester:1, troncal:false, credits:6, hours:60, cursar:"172", aprobar:"172", url: PLACEHOLDER },
   { code:"2272", name:"Física Aplicada a la Logística", year:2, semester:1, troncal:false, credits:5, hours:60, cursar:"176", aprobar:"176", url: PLACEHOLDER },
-  { code:"2273", name:"Envases y Embalajes", year:2, semester:1, troncal:false, credits:5, hours:60, cursar:"177", aprobar:"175-177", url:"envases.html" },
+  { code:"2273", name:"Envases y Embalajes", year:2, semester:1, troncal:false, credits:5, hours:60, cursar:"177", aprobar:"175-177", url:"/2_año/1_cuatrimestre/Envases y Embalajes/envases.html" },
   { code:"2274", name:"Portugués II", year:2, semester:1, troncal:false, credits:3, hours:50, cursar:"179", aprobar:"179", url: PLACEHOLDER },
 
   // ---------------- AÑO 2 · CUATRIMESTRE 2 ----------------

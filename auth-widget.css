@@ -2,6 +2,10 @@
    WIDGET DE SESIÓN — estilos para la nav
    ========================================================= */
 
+.nav__auth{
+  flex-shrink:0;
+}
+
 .nav__login{
   border-color: rgba(251,246,234,.5) !important;
   color: var(--paper) !important;

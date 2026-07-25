@@ -8,6 +8,13 @@
    Y en el nav, agregá un contenedor vacío:
      <div class="nav__auth" id="navAuth"></div>
    Este script lo completa solo según el estado de sesión.
+
+   NOTA: esta página se considera PROTEGIDA. Si no hay sesión
+   iniciada, se redirige automáticamente a login.html en vez
+   de mostrar el contenido. Para que no se vea un "flash" del
+   contenido antes de redirigir, el <html> de la página debe
+   tener la clase "auth-checking" (ver index.html), que este
+   script quita recién cuando confirma que hay usuario.
    ========================================================= */
 
 import { firebaseConfig } from "./firebase-config.js";
@@ -18,26 +25,35 @@ import {
   signOut,
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
+const LOGIN_PAGE = "login.html";
 const navAuth = document.getElementById("navAuth");
-if (navAuth) {
-  const configIsPlaceholder = Object.values(firebaseConfig).some(
-    (v) => typeof v === "string" && v.includes("PEGAR")
-  );
 
-  if (configIsPlaceholder) {
-    renderSignedOut();
-  } else {
-    const app = initializeApp(firebaseConfig);
-    const auth = getAuth(app);
+function revealPage() {
+  document.documentElement.classList.remove("auth-checking");
+}
 
-    onAuthStateChanged(auth, (user) => {
-      if (user) {
-        renderSignedIn(user, auth);
-      } else {
-        renderSignedOut();
-      }
-    });
-  }
+const configIsPlaceholder = Object.values(firebaseConfig).some(
+  (v) => typeof v === "string" && v.includes("PEGAR")
+);
+
+if (configIsPlaceholder) {
+  // Firebase todavía no está configurado: no podemos exigir login,
+  // así que mostramos el sitio igual para no dejar a nadie afuera.
+  if (navAuth) renderSignedOut();
+  revealPage();
+} else {
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+
+  onAuthStateChanged(auth, (user) => {
+    if (!user) {
+      window.location.href = LOGIN_PAGE;
+      return;
+    }
+
+    if (navAuth) renderSignedIn(user, auth);
+    revealPage();
+  });
 }
 
 function renderSignedOut() {

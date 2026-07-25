@@ -3,12 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Iniciar sesión · Licenciatura en Logística · ECONET</title>
+<title>Iniciar sesión · Licenciatura en Logística · Aula Virtual FCE-UNCuyo</title>
 <meta name="description" content="Acceso al aula virtual de la Licenciatura en Logística. Iniciá sesión o registrate con tu cuenta de Google o con tu correo electrónico.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="login.css">
+<link rel="icon" href="/img/favicon.png" type="image/png">
+
 </head>
 <body>
 
@@ -22,7 +24,7 @@
       <span class="login-brand__crate" aria-hidden="true">
         <svg viewBox="0 0 48 48" fill="none"><path d="M6 14L24 6l18 8-18 8L6 14Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M6 14v20l18 8V22L6 14Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M42 14v20l-18 8V22l18-8Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/></svg>
       </span>
-      <span>ECONET <em>· Licenciatura en Logística</em></span>
+      <span>Aula Virtual FCE-UNCuyo <em>· Licenciatura en Logística</em></span>
     </a>
 
     <div class="login-info__body">
@@ -112,6 +114,20 @@
         <p class="login-success" id="loginSuccess" hidden></p>
 
         <p class="login-fineprint">Al continuar aceptás que tu nombre, foto y correo se usen para identificarte dentro del aula virtual.</p>
+      </section>
+
+   
+      <section class="login-view" id="viewSignedIn" hidden>
+        <img class="login-avatar" id="userAvatar" src="" alt="">
+        <h2 class="login-title login-title--sm" id="userName">Tu cuenta</h2>
+        <p class="login-sub" id="userEmail"></p>
+
+        <a class="btn btn--primary login-continue" id="continueBtn" href="index.html">
+          Ir al aula virtual
+          <svg viewBox="0 0 24 24" fill="none" width="16" height="16"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+
+        <button class="link-btn" id="signOutBtn" type="button">Cerrar sesión</button>
       </section>
 
     </div>

@@ -208,17 +208,14 @@ onAuthStateChanged(auth, (user) => {
   setEmailLoading(false);
 
   if (user) {
-    userAvatar.src = user.photoURL || "";
-    userAvatar.alt = user.displayName || "Usuario";
-    userName.textContent = user.displayName || user.email || "Tu cuenta";
-    userEmail.textContent = user.email || "";
-
-    viewSignedOut.hidden = true;
-    viewSignedIn.hidden = false;
-  } else {
-    viewSignedOut.hidden = false;
-    viewSignedIn.hidden = true;
+    // Ya hay sesión iniciada: vamos directo al aula virtual,
+    // sin mostrar ninguna pantalla intermedia.
+    window.location.href = REDIRECT_AFTER_LOGIN;
+    return;
   }
+
+  viewSignedOut.hidden = false;
+  viewSignedIn.hidden = true;
 });
 
 /* ---------------------- HELPERS ---------------------- */

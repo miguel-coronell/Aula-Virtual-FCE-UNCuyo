@@ -144,6 +144,11 @@ input{ font-family:inherit; }
 }
 
 .login-view{ display:flex; flex-direction:column; align-items:center; text-align:center; }
+/* IMPORTANTE: sin esto, el atributo "hidden" que pone login.js no
+   alcanza a ocultar la vista porque la regla de arriba (display:flex)
+   le gana en la cascada. Con este selector más específico, [hidden]
+   vuelve a funcionar como corresponde. */
+.login-view[hidden]{ display:none; }
 
 /* ---------------------- TABS ---------------------- */
 .login-tabs{
@@ -228,6 +233,10 @@ input{ font-family:inherit; }
 /* ---------------------- EMAIL FORM ---------------------- */
 .login-form{ width:100%; display:flex; flex-direction:column; gap:14px; text-align:left; }
 .login-field{ display:flex; flex-direction:column; gap:6px; }
+/* Mismo motivo que .login-view[hidden] más arriba: sin esto,
+   el campo "Confirmar contraseña" queda visible en el tab de
+   "Iniciar sesión" aunque login.js le ponga hidden. */
+.login-field[hidden]{ display:none; }
 .login-field span{ font-size:.78rem; font-weight:600; color: var(--ink-soft); }
 .login-field input{
   border: 1.5px solid var(--line);
